@@ -1,0 +1,56 @@
+/* Premium Header System Layout Adjustments */
+.premium-nav .nav-inner {
+  display: flex !important;
+  justify-content: space-between !important; /* Forces logo left, nav items right */
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 2rem !important;
+}
+
+.premium-nav .nav-logo {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important; /* Prevents logo from squishing */
+}
+
+.premium-nav .nav-right-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-grow: 1 !important; /* Claims remaining header space to push tabs to the wall */
+}
+
+.premium-nav .nav-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  gap: 2.5rem !important; /* Balanced gap between luxury items */
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Accent highlight styling for the new unified navbar action button */
+.nav-contact-link {
+  background: var(--accent, #ff007f);
+  color: #fff !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 4px !important;
+  transition: opacity 0.3s ease !important;
+  font-weight: 600 !important;
+}
+
+.nav-contact-link:hover {
+  opacity: 0.9 !important;
+}
+
+/* Hide legacy centered containers or clutter elements if any */
+.premium-nav .nav-actions {
+  display: none !important;
+}
+
+/* Ensure industry overview grid accommodates removed icons elegantly */
+.ind-grid-large .ind-card {
+  text-align: left !important;
+  padding: 2.5rem 2rem !important;
+}
